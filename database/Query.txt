@@ -1,0 +1,472 @@
+ALTER TABLE `diamond_natural` CHANGE `shade` `shade` VARCHAR(25) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL
+
+ALTER TABLE `suppliers` ADD `company_name` VARCHAR(200) NULL DEFAULT NULL AFTER `compnay_partner_document`, ADD `bank_name` VARCHAR(200) NULL DEFAULT NULL AFTER `company_name`, ADD `account_holder_name` VARCHAR(200) NULL DEFAULT NULL AFTER `bank_name`, ADD `ifsc_code` VARCHAR(200) NULL DEFAULT NULL AFTER `account_holder_name`, ADD `account_number` VARCHAR(200) NULL DEFAULT NULL AFTER `ifsc_code`, ADD `branch_name` VARCHAR(200) NULL DEFAULT NULL AFTER `account_number`;
+
+ALTER TABLE `suppliers` ADD `invoice` VARCHAR(250) NULL DEFAULT NULL AFTER `branch_name`;
+
+CREATE TABLE `wish_list` (
+  `id` int(11) NOT NULL,
+  `customer_id` int(11) DEFAULT NULL,
+  `certificate_no` varchar(25) NOT NULL,
+  `diamond_type` varchar(2) DEFAULT NULL,
+  `wish_rate` float(16,2) DEFAULT '0.00',
+  `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+ALTER TABLE `wish_list` ADD PRIMARY KEY (`id`);
+ALTER TABLE `wish_list` MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+ALTER TABLE `wish_list` ADD `is_delete` TINYINT(4) NOT NULL DEFAULT '0' AFTER `wish_rate`;
+
+
+CREATE TABLE `get_in_touche` (
+  `id` int(50) NOT NULL AUTO_INCREMENT,
+  `firstname` varchar(150) NOT NULL,
+  `lastname` varchar(150) NOT NULL,
+  `email` varchar(200) NOT NULL,
+  `mobile` varchar(100) NOT NULL,
+  `message` varchar(250) NOT NULL,
+  `created_at` varchar(100) NOT NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+
+
+
+
+ALTER TABLE `orders` ADD `supplier_reject_reson` VARCHAR(100) NOT NULL AFTER `supplier_comment`, ADD `supplier_reject_comment` VARCHAR(100) NOT NULL AFTER `supplier_reject_reson`;
+
+
+CREATE TABLE `view_diamond_detail` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `customer_id` int(11) NOT NULL,
+  `supplier_id` int(11) NOT NULL,
+  `diamond_type` char(1) DEFAULT '',
+  `certificate_no` varchar(50) DEFAULT NULL,
+  `updated_at` datetime NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
+  `visited_at` datetime NOT NULL DEFAULT current_timestamp(),
+  `is_delete` tinyint(4) NOT NULL DEFAULT 0,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8
+
+
+ALTER TABLE `users` ADD `device_token` VARCHAR(250) NULL DEFAULT NULL AFTER `email_verified_at`;
+
+ALTER TABLE `supplier_invoices` CHANGE `File_name` `file_name` VARCHAR(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL DEFAULT NULL;
+
+
+
+ALTER TABLE `diamond_labgrown` ADD `green` VARCHAR(100) NOT NULL DEFAULT 'NO' AFTER `milky`, ADD `brown` VARCHAR(100) NOT NULL DEFAULT 'NO' AFTER `green`;
+
+
+ALTER TABLE `diamond_natural` ADD `green` VARCHAR(100) NOT NULL DEFAULT 'NO' AFTER `milky`, ADD `brown` VARCHAR(100) NOT NULL DEFAULT 'NO' AFTER `green`;
+
+
+
+ALTER TABLE `orders` ADD `stone_location` VARCHAR(150) NOT NULL AFTER `supplier_comment`, ADD `certificate_location` VARCHAR(150) NOT NULL AFTER `stone_location`, ADD `bgm` VARCHAR(100) NOT NULL AFTER `certificate_location`, ADD `eyeclean` VARCHAR(100) NOT NULL AFTER `bgm`, ADD `milky` VARCHAR(100) NOT NULL AFTER `eyeclean`, ADD `brown` VARCHAR(100) NOT NULL AFTER `milky`, ADD `green` VARCHAR(100) NOT NULL AFTER `brown`;
+
+ALTER TABLE `orders` ADD `reject_reason` VARCHAR(255) NULL AFTER `supplier_comment`;
+ALTER TABLE `orders` ADD `customer_comment` VARCHAR(255 ) NULL AFTER `supplier_comment` ;
+
+
+CREATE TABLE `permission` ( `permission_id` INT(15) NOT NULL AUTO_INCREMENT , `title` VARCHAR(150) NOT NULL , `url` VARCHAR(200) NOT NULL , `created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP , PRIMARY KEY (`permission_id`)) ENGINE = InnoDB;
+CREATE TABLE `user_has_permission` ( `id` INT(15) NOT NULL AUTO_INCREMENT , `permission_id` INT(15) NOT NULL , `user_id` INT(15) NOT NULL , `full` INT(10) NOT NULL DEFAULT '0' , `menu` INT(10) NOT NULL DEFAULT '0' , `edit` INT(10) NOT NULL DEFAULT '0' , `delete_status` INT(10) NOT NULL DEFAULT '0' , `created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP , `upadate_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+
+ALTER TABLE `user_has_permission` CHANGE `delete_status` `delete` INT(10) NOT NULL DEFAULT '0';
+
+
+CREATE TABLE `exports` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `export_name` varchar(150) NOT NULL,
+  `file_path` varchar(150) NOT NULL,
+  `created_at` varchar(11) NOT NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4
+
+
+
+
+
+
+
+//permission
+
+CREATE TABLE `permission` (
+  `permission_id` int(15) NOT NULL,
+  `title` varchar(150) NOT NULL,
+  `url` varchar(200) NOT NULL,
+  `created_at` datetime NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `permission`
+--
+
+INSERT INTO `permission` (`permission_id`, `title`, `url`, `created_at`) VALUES
+(1, 'add customer', 'add-customer', '2022-05-30 11:19:13'),
+(2, 'customer list', 'customer-list', '2022-05-30 11:19:38'),
+(3, 'gold customer', 'gcustomer', '2022-05-30 11:20:15'),
+(4, 'silver customer', 'scustomer', '2022-05-30 11:20:35'),
+(5, 'pending customer', 'pcustomer', '2022-05-30 11:21:10'),
+(6, 'delete customer', 'deletedcustomer', '2022-05-30 11:22:00'),
+(7, 'add suppliers', 'add-suppliers', '2022-05-30 11:23:58'),
+(8, 'pending suppliers list', 'pending-suppliers-list', '2022-05-30 11:24:17'),
+(9, 'suppliers list', 'suppliers-list', '2022-05-30 11:24:31'),
+(10, 'deleted supplier list', 'deleted-supplier-list', '2022-05-30 11:24:49'),
+(11, 'add staff', 'add-staff', '2022-05-30 11:28:01'),
+(12, 'manage staff', 'manage-staff', '2022-05-30 11:28:15'),
+(13, 'add associate', 'add-associate', '2022-05-30 11:28:48'),
+(14, 'manage associate', 'manage-associate', '2022-05-30 11:29:06'),
+(15, 'unloaded lab diamond', 'unloaded-lab-diamond', '2022-05-30 11:29:32'),
+(16, 'unloaded natural diamond', 'unloaded-natural-diamond', '2022-05-30 11:29:53'),
+(17, 'add diamond', 'add-diamond', '2022-05-30 11:30:10'),
+(18, 'admin upload diamond', 'admin-upload-diamond', '2022-05-30 11:30:24'),
+(19, 'order list', 'order-list', '2022-05-30 11:31:22'),
+(20, 'enquiry list', 'enquiry-list', '2022-05-30 11:31:38'),
+(21, 'invoice list', 'invoice-list', '2022-05-30 11:33:01'),
+(22, 'admin perfoma invoice list', 'admin-perfoma-invoice-list', '2022-05-30 11:33:17'),
+(23, 'purchase list', 'purchase-list', '2022-05-30 11:33:36'),
+(24, 'pickup list', 'pickup-list', '2022-05-30 11:33:52'),
+(25, 'pickup done list', 'pickup-done-list', '2022-05-30 11:34:08'),
+(26, 'pricesetting', 'pricesetting', '2022-05-30 11:34:20'),
+(27, 'pricesetting', 'pricesetting', '2022-05-30 11:49:48'),
+(28, 'shipping price setting', 'shippingpricesetting', '2022-05-30 11:50:08'),
+(29, 'login history customer', 'login-history-customer', '2022-05-30 11:50:29'),
+(30, 'login history supplier', 'login-history-supplier', '2022-05-30 11:50:44'),
+(31, 'login history staff', 'login-history-staff', '2022-05-30 11:50:58'),
+(32, 'api history', 'api-history', '2022-05-30 11:51:10'),
+(33, 'red alert', 'red-alert', '2022-05-30 11:51:26'),
+(34, 'permission', 'permission', '2022-05-30 11:51:33'),
+(35, 'logout', 'logout', '2022-05-30 11:51:55'),
+(36, 'diamond natural', 'diamond_natural', '2022-05-30 11:55:29'),
+(37, 'diamond labgrown', 'diamond_labgrown', '2022-05-30 11:55:45');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `permission`
+--
+ALTER TABLE `permission`
+  ADD PRIMARY KEY (`permission_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `permission`
+--
+ALTER TABLE `permission`
+  MODIFY `permission_id` int(15) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
+COMMIT;
+
+
+
+CREATE TABLE `white_label` (
+  `id` int(15) NOT NULL AUTO_INCREMENT,
+  `user_id` int(15) NOT NULL,
+  `diamond_type` varchar(150) NOT NULL,
+  `color` varchar(150) NOT NULL,
+  `clarity` varchar(150) NOT NULL,
+  `cut` varchar(150) NOT NULL,
+  `polish` varchar(150) NOT NULL,
+  `symmetry` varchar(150) NOT NULL,
+  `fluorescence` varchar(150) NOT NULL,
+  `lab` varchar(150) NOT NULL,
+  `country` varchar(150) NOT NULL,
+  `eye_clean` varchar(150) NOT NULL,
+  `token_key` varchar(200) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4
+
+
+
+ALTER TABLE `white_label` ADD `shape` VARCHAR(200) NOT NULL AFTER `diamond_type`;
+
+
+ALTER TABLE `invoices_perfoma` ADD `is_delete` INT NOT NULL AFTER `payment`;
+
+
+
+ALTER TABLE `career` ADD `location` VARCHAR(200) NOT NULL AFTER `job_descritpion`, ADD `number_of_postion` INT(150) NOT NULL AFTER `location`;
+ALTER TABLE `career` ADD `technology` VARCHAR(200) NOT NULL AFTER `number_of_postion`;
+ALTER TABLE `career` ADD `work_experience` INT(100) NOT NULL AFTER `technology`;
+
+
+ALTER TABLE `customers` ADD `manage_by` INT NOT NULL AFTER `discount`;
+
+CREATE TABLE `tdp`.`qc_list` ( `id` INT NOT NULL AUTO_INCREMENT , `order_id` INT NOT NULL , `qc_comment` TEXT NOT NULL , `qc_approve` VARCHAR(150) NOT NULL , `approval_id` INT NOT NULL , `created_at` DATETIME NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+
+DROP TABLE IF EXISTS `price_markup_setting`;
+CREATE TABLE IF NOT EXISTS `price_markup_setting` (
+  `price_id` int(11) NOT NULL AUTO_INCREMENT,
+  `min_range` double NOT NULL,
+  `max_range` double NOT NULL,
+  `pricechange` float NOT NULL DEFAULT '0',
+  `revers_min_range` double(16,6) NOT NULL,
+  `revers_max_range` double(16,6) NOT NULL,
+  PRIMARY KEY (`price_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+
+INSERT INTO `price_markup_setting` (`price_id`, `min_range`, `max_range`, `pricechange`, `revers_min_range`, `revers_max_range`) VALUES
+(1, 0, 999.99999, 25, 0.000000, 264.999999),
+(2, 1000, 1999.999999, 40, 265.000000, 527.499999),
+(3, 2000, 2999.999999, 65, 265.000000, 527.499999),
+(4, 3000, 3999.999999, 90, 265.000000, 527.499999),
+(5, 4000, 4999.999999, 115, 265.000000, 527.499999),
+(6, 5000, 1999.999999, 135, 265.000000, 527.499999),
+(7, 6000, 1999.999999, 145, 265.000000, 527.499999),
+(8, 7000, 999999, 150, 265.000000, 527.499999);
+
+
+
+CREATE TABLE `cart` (
+  `id` int(11) NOT NULL,
+  `customer_id` int(11) DEFAULT NULL,
+  `certificate_no` varchar(25) NOT NULL,
+  `sku` int(11) NOT NULL,
+  `diamond_type` varchar(2) DEFAULT NULL,
+  `cart_rate` float(16,2) DEFAULT 0.00,
+  `ip` varchar(50) NOT NULL,
+  `is_delete` tinyint(4) NOT NULL DEFAULT 0,
+  `created_at` datetime NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+ALTER TABLE `cart` ADD PRIMARY KEY (`id`);
+ALTER TABLE `cart` MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+
+ALTER TABLE `stock_upload_report` ADD `added` INT NOT NULL AFTER `invalid_diamond`, ADD `updated` INT NOT NULL AFTER `added`;
+.
+CREATE TABLE `accounts` (
+  `bill_id` int(11) NOT NULL,
+  `supplier_id` int(11) NOT NULL,
+  `status` varchar(8) DEFAULT NULL,
+  `image` varchar(50) NOT NULL,
+  `amount` double NOT NULL,
+  `paid_amount` int(11) DEFAULT NULL,
+  `date` date NOT NULL,
+  `paid_date` date DEFAULT NULL,
+  `created_by` int(11) NOT NULL
+)
+
+ALTER TABLE `suppliers` ADD `reason` VARCHAR(50) NULL AFTER `stock_status`;
+
+ALTER TABLE `accounts` ADD `is_delete` INT NOT NULL DEFAULT '0' AFTER `paid_date`;
+
+ALTER TABLE `accounts` ADD `comment` VARCHAR(100) NULL DEFAULT NULL AFTER `paid_date`;
+
+ALTER TABLE `accounts` CHANGE `status` `status` VARCHAR(8) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT 'unpaid';
+
+ALTER TABLE `export_list` ADD `reff_no` VARCHAR(50) NULL AFTER `stone_count`;
+
+ALTER TABLE `export_list` ADD `ex_status` VARCHAR(10) NULL AFTER `reff_no`, ADD `receive_date` DATE NULL AFTER `ex_status`;
+
+ALTER TABLE `accounts` ADD `invoice_no` VARCHAR(50) NOT NULL AFTER `bill_id`;
+
+ALTER TABLE `stock_upload_Report` ADD `is_delete` TINYINT NOT NULL DEFAULT '0' AFTER `conflicted`;
+
+php artisan migrate --path=/database/migrations/2022_10_13_113628_returndiamond.php
+
+ALTER TABLE `export_list` ADD `shipping_charge` DOUBLE NOT NULL AFTER `is_delete`, ADD `total_amount` DOUBLE NOT NULL AFTER `shipping_charge`;
+
+ALTER TABLE `export_list` ADD `updated_at` TIMESTAMP NULL DEFAULT NULL AFTER `created_at`;
+
+ALTER TABLE `export_list` CHANGE `created_at` `created_at` TIMESTAMP NULL DEFAULT NULL;
+
+ALTER TABLE `orders` ADD `irm_no` VARCHAR(50) NULL DEFAULT NULL AFTER `ref_no`;
+
+ALTER TABLE `cart` ADD `irm_no` VARCHAR(50) NULL DEFAULT NULL AFTER `certificate_no`;
+
+ALTER TABLE `export_list` ADD `customer` INT NOT NULL AFTER `is_delete`;
+
+ALTER TABLE `invoices` ADD `resend_mail` INT NOT NULL DEFAULT '0' AFTER `customer_id`;
+
+ALTER TABLE `export_list` ADD `export_invoice` VARCHAR(50) NULL DEFAULT NULL AFTER `edi_excel`;
+
+ALTER TABLE `pickups` ADD `export_invoice` VARCHAR(50) NULL DEFAULT NULL AFTER `export_number`;
+
+CREATE TABLE `image_video_request` (
+  `id` int(11) NOT NULL,
+  `cus_id` int(11) NOT NULL,
+  `certificate_no` varchar(50) NOT NULL,
+  `sup_id` int(11) NOT NULL,
+  `diamond_type` varchar(5) NOT NULL,
+  `video` varchar(100) NOT NULL,
+  `image` varchar(100) NOT NULL,
+  `status` varchar(10) NOT NULL,
+  `created_at` datetime NOT NULL,
+  `updated_at` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE `diamond_tracking` (
+  `tracking_id` int(11) NOT NULL,
+  `certificate_no` varchar(25) NOT NULL,
+  `orders_id` int(11) NOT NULL,
+  `location` varchar(20) NOT NULL,
+  `current_location` varchar(20) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+ALTER TABLE `associates` ADD `country` VARCHAR(20) NOT NULL AFTER `mobile`;
+
+CREATE TABLE `pickups` (
+  `pickup_id` int(11) NOT NULL,
+  `orders_id` int(11) NOT NULL,
+  `cerificate_no` varchar(50) DEFAULT NULL,
+  `customer_id` int(11) NOT NULL,
+  `expected_delivery_at` datetime NOT NULL,
+  `status` varchar(25) DEFAULT NULL,
+  `location` varchar(50) NOT NULL,
+  `destination` varchar(255) NOT NULL,
+  `export_number` varchar(50) NOT NULL,
+  `export_invoice` varchar(50) DEFAULT NULL,
+  `updated_by` int(11) DEFAULT NULL,
+  `invoice_number` int(11) DEFAULT NULL,
+  `created_at` datetime NOT NULL,
+  `updated_at` datetime NOT NULL DEFAULT current_timestamp()
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+ALTER TABLE `suppliers` ADD `inactive_date` TIMESTAMP NULL AFTER `reason`;
+
+ALTER TABLE `invoices` ADD `sales_invoice_pdf` VARCHAR(50) NOT NULL AFTER `bill_invoice_pdf`;
+
+ALTER TABLE `pickups` ADD `previous_location` VARCHAR(50) NOT NULL AFTER `destination`;
+
+CREATE TABLE `supplier_status_history` (
+  `id` int(11) NOT NULL,
+  `sup_id` int(11) NOT NULL,
+  `updated_by` int(11) NOT NULL,
+  `comment` varchar(155) NOT NULL,
+  `status` varchar(10) NOT NULL,
+  `date` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+ALTER TABLE `orders` ADD `internal_confirmation` VARCHAR(25) NOT NULL DEFAULT 'PENDING' AFTER `supplier_status`;
+
+CREATE TABLE `leads_comment` (
+  `com_id` int(11) NOT NULL,
+  `leads_id` int(11) NOT NULL,
+  `created_by` int(11) NOT NULL,
+  `comment` varchar(200) NOT NULL,
+  `is_delete` int(2) NOT NULL DEFAULT 0,
+  `follow_up_date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+ALTER TABLE `supplier_status_history` ADD `feedback` VARCHAR(151) NOT NULL AFTER `updated_by`;
+
+ALTER TABLE `leads` ADD `is_delete` INT NOT NULL DEFAULT '0' AFTER `associated_company`;
+
+ALTER TABLE `leads` CHANGE `buyer_type` `type` VARCHAR(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL DEFAULT NULL;
+
+CREATE TABLE `timelinecycles` (
+  `id` int(11) NOT NULL,
+  `order_id` int(11) DEFAULT NULL,
+  `certificate_no` varchar(50) DEFAULT NULL,
+  `user_id` int(11) DEFAULT NULL,
+  `flow` varchar(200) DEFAULT NULL,
+  `days_count` varchar(50) DEFAULT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+ALTER TABLE `notifications` ADD `as_read` INT(5) NOT NULL DEFAULT '0' AFTER `body`;
+
+ALTER TABLE `notifications` ADD `created_by` INT(5) NOT NULL AFTER `body`;
+
+ALTER TABLE `orders` ADD `priority` ENUM('low', 'medium', 'high','wait payment') NOT NULL DEFAULT 'medium' AFTER `buy_rate`;
+
+ALTER TABLE `invoices_perfoma` ADD `invoice_generate_status` INT(3) NOT NULL DEFAULT '0' AFTER `shipping_address`;
+
+ALTER TABLE `orders` ADD `approved_at` TIMESTAMP NULL DEFAULT NULL AFTER `hold_status`;
+
+ALTER TABLE `orders` ADD `port` VARCHAR(50) NULL DEFAULT NULL AFTER `internal_confirmation`;
+
+ALTER TABLE `customers` ADD `showsupplier` INT(5) NOT NULL DEFAULT '1' AFTER `com_reg_doc`;
+
+ALTER TABLE `admins` ADD `manager` INT NOT NULL AFTER `account_type	`;
+
+ALTER TABLE `cart` ADD `mail_send` INT(5) NOT NULL DEFAULT '0' AFTER `ip`;
+
+CREATE TABLE `template` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `subject` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `message` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE `tdp`.`shipping_destination`
+(
+    `add_id` INT NOT NULL AUTO_INCREMENT ,
+    `company_name` VARCHAR(100) NOT NULL ,
+    `address` VARCHAR(255) NOT NULL ,
+    `city` VARCHAR(100) NOT NULL ,
+    `state` VARCHAR(100) NOT NULL ,
+    `country` VARCHAR(100) NOT NULL ,
+    `pincode` INT(20) NOT NULL ,
+    `gst_no` VARCHAR(20) NOT NULL ,
+    `place_of_supply` VARCHAR(60) NOT NULL ,
+    `phone_no` VARCHAR(20) NOT NULL ,
+    `company_tax` VARCHAR(100) NOT NULL ,
+    `port_of_discharge` VARCHAR(100) NOT NULL ,
+    `attend_name` VARCHAR(250) NOT NULL ,
+    `customer_id` INT(20) NOT NULL ,
+    `customer_name` VARCHAR(200) NOT NULL ,
+    `created_at` TIMESTAMP NOT NULL ,
+    `updated_at` TIMESTAMP NULL DEFAULT NULL ,
+    PRIMARY KEY (`add_id`)
+) ENGINE = InnoDB;
+
+ALTER TABLE `associates` ADD `gst_no` VARCHAR(30) NULL AFTER `country`, ADD `pan_no` VARCHAR(30) NULL AFTER `gst_no`;
+
+ALTER TABLE `shipping_destination` ADD `by_default` INT(2) NOT NULL DEFAULT '0' COMMENT '0-Not By Default\r\n1-By Default' AFTER `address`;
+
+
+INSERT INTO shipping_destination (company_name,customer_name,address,by_default,city,state,country,phone_no,company_tax,port_of_discharge,customer_id)
+SELECT companyname,firstname,address,1,city,state,country,shiping_phone,company_tax,port_of_discharge,cus_id FROM customers
+INNER JOIN users WHERE users.id = customers.cus_id
+
+ALTER TABLE `associates` ADD `branch_name` VARCHAR(100) NULL DEFAULT NULL AFTER `bank_name`;
+
+ALTER TABLE `associates` ADD `ifsc_code` VARCHAR(50) NULL DEFAULT NULL AFTER `bank_address`;
+
+ALTER TABLE `pickups` CHANGE `invoice_number` `invoice_number` VARCHAR(11) NULL DEFAULT NULL;
+
+ALTER TABLE `orders_items` DROP INDEX `certificate_no`;
+
+ALTER TABLE `associates` ADD `bsb_code` VARCHAR(50) NULL AFTER `intermediary_swift_code`;
+
+ALTER TABLE `invoices` ADD `clearing_charge` DOUBLE NOT NULL DEFAULT '0' AFTER `shipping_charge`, ADD `gst` DOUBLE NOT NULL DEFAULT '0' AFTER `clearing_charge`;
+
+ALTER TABLE `invoices` CHANGE `clearing_charge` `clearing_charge` DOUBLE NOT NULL DEFAULT '0';
+
+ALTER TABLE `invoices` CHANGE `gst` `gst` DOUBLE NOT NULL DEFAULT '0';
+
+ALTER TABLE `invoices` ADD `ex_rate` DOUBLE NOT NULL DEFAULT '0' AFTER `total_amount`;
+
+ALTER TABLE `invoices` CHANGE `clearing_charges` `clearing_charge` DOUBLE NOT NULL DEFAULT '0';
+
+DROP TABLE IF EXISTS `parcelcomments`;
+CREATE TABLE IF NOT EXISTS `parcelcomments` (
+  `com_id` int NOT NULL AUTO_INCREMENT,
+  `user_id` int NOT NULL,
+  `parcel_id` int NOT NULL,
+  `comment` varchar(200) NOT NULL,
+  `sku` varchar(200) NOT NULL,
+  `is_delete` int NOT NULL DEFAULT '0',
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `user_type` varchar(150) NOT NULL,
+  PRIMARY KEY (`com_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+COMMIT;
+
+ALTER TABLE `parcelcomments` CHANGE `user_type` `user_type` VARCHAR(150) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL AFTER `user_id`;
+
+ALTER TABLE `suppliers` ADD `memo_allow` INT NOT NULL DEFAULT '0' AFTER `return_allow`;
+

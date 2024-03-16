@@ -1,0 +1,2 @@
+SELECT * FROM (SELECT * FROM stock_upload_report ORDER BY created_at DESC) AS data GROUP BY supplier_id;
+SELECT stock_upload_report.*,suppliers.supplier_name FROM stock_upload_report JOIN suppliers ON stock_upload_report.supplier_id=suppliers.sup_id WHERE id IN (SELECT MAX(id) FROM stock_upload_report GROUP BY supplier_id);

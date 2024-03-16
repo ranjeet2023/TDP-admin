@@ -1,0 +1,16 @@
+/command "open ftp://u239784811.rameegems:dRuHNU39Wtv0@ftp.thediamondport.com/" "lcd ""D:\thediamondport\""" "cd /" "put ""file.xlsx""" "exit"
+
+/command "open ftp://u239784811.alaukikgems:7XYms3qDUaKA@ftp.thediamondport.com/" "lcd ""E:\AG\Important\""" "cd /" "put ""TDP.xlsx""" "exit"
+
+/command "open ftp://u239784811.diagreenexport:eYcr3tXLoVdW@ftp.thediamondport.com/" "lcd ""C:\Users\Haresh\Dropbox\ONLINE""" "cd /" "put ""NIVODA LG.xlsx""" "exit"
+
+
+/command "open ftp://maitridiamond@thediamondport.com:E18cc5b92sbn@ftp.thediamondport.com/" "lcd ""C:\Users\DELL\Desktop\TDP""" "cd /" "put ""The Diamond Port.xlsx""" "exit"
+
+/command "open ftp://diyamimpex@thediamondport.com:cd34gs6cfAPD6@ftp.thediamondport.com/" "lcd ""D:\""" "cd /" "put ""TDP.xlsx""" "exit"
+
+
+/command "open ftp://rahiimpex@thediamondport.com:112dc$s7ds28@ftp.thediamondport.com/" "lcd ""C:\Users\Admin\Desktop\""" "cd /" "put ""CVD.xlsx""" "exit"
+
+
+/command "open ftp://sundiam@thediamondport.com:71t15ckm5b4df@ftp.thediamondport.com/" "lcd ""D:\tdp""" "cd /" "put ""sundiam.xls""" "exit"

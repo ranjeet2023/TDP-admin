@@ -1,0 +1,2015 @@
+/*
+=======================================================================
+                        media Query
+=======================================================================
+*/
+
+@media screen and (min-width: 1400px) {
+  .containerX {
+    max-width: 1184px;
+    margin: 0;
+    margin: 0 auto !important;
+  }
+
+  .spacer229 {
+    max-width: 982px;
+    margin: 0 auto !important;
+  }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1599px) {
+  .LandingPage .BuySell,
+  .LandingPage .MostSearch {
+    margin: 0;
+  }
+
+  .LandingPage .UniquePort {
+    margin: 7.2rem 0rem 0 0rem;
+  }
+
+  /* About Us */
+  .About-us .cards-bg {
+    background-position: bottom right 16rem;
+  }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1699px) {
+  /* ----- About US -------- */
+  .About-us .people-card-details .content-card {
+    background-color: var(--heading-color);
+    padding: 3.3rem 6.3rem 11.5rem 3.2rem;
+    color: var(--color-white);
+    border-radius: 0 0 34rem 0;
+  }
+
+  /* ----- Error ------ */
+  /* ----- Error ------ */
+  .error-sec-bg .magnifying-glass {
+    position: absolute;
+    top: 24%;
+    left: 38%;
+    animation: magnify 4s linear infinite;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  html {
+    font-size: 9px;
+  }
+  .containerX {
+    margin: 0 10rem !important;
+  }
+
+  .spacer229 {
+    margin: 0 18.9rem !important;
+  }
+
+  /* index */
+  .LandingPage .DiamondPort .DiamondPort-card {
+    height: 43rem;
+  }
+
+  .LandingPage .banner-content h6 {
+    width: 80%;
+  }
+
+  .LandingPage .BuySell,
+  .LandingPage .MostSearch {
+    margin: 0 !important;
+  }
+
+  .LandingPage .UniquePort {
+    margin: 7.2rem 0 0 0 !important;
+  }
+
+  .LandingPage .DiamondPort-card-row .DiamondPortcard-column-1,
+  .LandingPage .DiamondPort-card-row .DiamondPortcard-column-2,
+  .LandingPage .DiamondPort-card-row .DiamondPortcard-column-3 {
+    width: 31.45%;
+  }
+
+  .About-us .Meet-Our-Team .Team-column {
+    width: 22.6%;
+  }
+
+  /* ------- ABout Us ------- */
+  /* .About-us .people-card-details .year-card {
+    padding: 3rem 10rem 13rem 4rem;
+  } */
+
+  .About-us .people-card .people-about {
+    padding: 2rem 2rem;
+  }
+
+  .About-us .people-card-details .port-card {
+    padding: 4rem 8rem 6rem 2rem;
+  }
+
+  .About-us .cards-bg {
+    background-position: bottom right 16rem;
+  }
+
+  .About-us .people-card-details .port-card h1 {
+    font-size: 5rem;
+  }
+
+  .About-us .people-card-details .content-card {
+    padding: 4rem 6rem 4rem 4rem;
+  }
+
+  .About-us .feature-card {
+    height: 38.6rem;
+  }
+
+  .About-us .feature-card-column {
+    width: 31.45%;
+  }
+
+  .people-about1 {
+    height: 39rem !important;
+  }
+  .people-about2 {
+    height: 39rem !important;
+  }
+  .people-about3 {
+    height: 35rem !important;
+  }
+  .people-about4 {
+    height: 32rem !important;
+  }
+
+  /* ----- For Buyer ----- */
+  .loupas-3 {
+    left: 15.5rem;
+  }
+
+  /* ---- For Supplier ----- */
+  .api {
+    top: 9.3rem;
+    left: 22rem;
+  }
+
+  @keyframes api {
+    0% {
+      top: 11rem;
+      left: 26rem;
+    }
+    100% {
+      top: 9.3rem;
+      left: 22rem;
+    }
+  }
+
+  .excel {
+    top: 5.6rem;
+    left: 15.4rem;
+  }
+
+  @keyframes excel {
+    0% {
+      top: 6rem;
+      left: 10rem;
+    }
+    100% {
+      top: 5.6rem;
+      left: 15.4rem;
+    }
+  }
+
+  .ftp {
+    top: 4rem;
+    left: 20.8rem;
+  }
+
+  @keyframes ftp {
+    0% {
+      top: 0rem;
+    }
+    100% {
+      top: 4rem;
+    }
+  }
+  /* ----------- Solution ---------- */
+  .Solution .selector-item_label {
+    padding: 2rem 5.5rem;
+  }
+
+  /* ----- Error ------ */
+  .error-sec-bg .magnifying-glass {
+    position: absolute;
+    top: 24%;
+    left: 38%;
+    animation: magnify 4s linear infinite;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  html {
+    font-size: 8.5px;
+  }
+  .containerX {
+    margin: 0 8rem !important;
+  }
+
+  .spacer229 {
+    margin: 0 14.9rem !important;
+  }
+
+  .nav-link {
+    padding: 1rem 0.8rem;
+  }
+
+  /* Index */
+  .banner-content h2 {
+    font-size: 3.5rem !important;
+  }
+
+  .LandingPage .banner-img img {
+    margin-bottom: -2rem;
+  }
+
+  .LandingPage .UniquePort .Port-Heading {
+    padding-right: 0;
+  }
+
+  /* .LandingPage .banner-content h6 {
+    width: 88%;
+  } */
+
+  .LandingPage .NaturalDiamonds,
+  .LandingPage .NaturalDiamonds-img img,
+  .LandingPage .LabgrownDiamonds,
+  .LandingPage .LabgrownDiamonds-img img {
+    height: 25rem;
+  }
+
+  .LandingPage .BuySell,
+  .LandingPage .MostSearch {
+    margin: 0 !important;
+  }
+
+  .LandingPage .UniquePort {
+    margin: 7.2rem 0 0 0 !important;
+  }
+
+  /* index */
+
+  .LandingPage .DiamondPort .DiamondPort-card {
+    height: 45rem;
+  }
+
+  .LandingPage .videoback {
+    height: 40rem;
+  }
+
+  .LandingPage .DiamondPort-card-row .DiamondPortcard-column-1,
+  .LandingPage .DiamondPort-card-row .DiamondPortcard-column-2,
+  .LandingPage .DiamondPort-card-row .DiamondPortcard-column-3 {
+    width: 31.2%;
+  }
+
+  .About-us .Meet-Our-Team .Team-column {
+    width: 22.6%;
+  }
+
+  /* -----About Us ----- */
+  /* .About-us .people-card-details .year-card {
+    padding: 3.2rem 6rem 12rem 3.2rem;
+  } */
+
+  .About-us .people-card-details .port-card {
+    padding: 3.2rem 4rem 4rem 3.2rem;
+  }
+
+  .About-us .cards-bg {
+    background-position: bottom right 6rem;
+  }
+  .About-us .people-card-details .port-card h1 {
+    font-size: 4rem;
+  }
+
+  .About-us .people-card .people-about {
+    padding: 1rem;
+  }
+
+  .About-us .people-card-details .content-card {
+    padding: 3.2rem 3.2rem 19rem 3.2rem;
+  }
+
+  .About-us .people-card-details .year-card-2 {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    padding: 4rem 5rem 6rem 4rem;
+  }
+
+  .people-about1 {
+    height: 40rem !important;
+  }
+  .people-about2 {
+    height: 39rem !important;
+  }
+  .people-about3 {
+    height: 35rem !important;
+  }
+  .people-about4 {
+    height: 33rem !important;
+  }
+
+  .About-us .feature-card .feature-card-content {
+    height: 16rem;
+    padding: 1rem;
+  }
+
+  .About-us .feature-card {
+    height: 35.2rem;
+  }
+
+  .About-us .feature-card-column {
+    width: 31.2%;
+  }
+
+  .Contact-us .banner-content h6 {
+    width: 80%;
+  }
+
+  /* Regiter */
+  .register .register-form .form-input {
+    padding: 2rem 4rem;
+  }
+
+  .register .radio-div [type="radio"]:checked + label:after,
+  .register .radio-div [type="radio"]:not(:checked) + label:after {
+    top: 3.4px;
+    left: 3.5px;
+  }
+
+  /* ---- For Buyer ---- */
+  .loupas-3 {
+    left: 16rem;
+  }
+  /* .loupas-2 {
+    left: 30%;
+    top: -2rem;
+  } */
+
+  .img-1 {
+    top: 26%;
+    left: 44%;
+    animation: img1 4s infinite linear;
+  }
+  .img-2 {
+    top: 33%;
+    left: 30%;
+    animation: img2 4s infinite linear;
+    /* display: none; */
+  }
+  .img-3 {
+    top: 13%;
+    left: 37%;
+    animation: img3 4s infinite linear;
+  }
+
+  @keyframes img3 {
+    0% {
+    }
+
+    50% {
+      top: 24%;
+      left: 16%;
+    }
+    100% {
+      top: 33%;
+      left: 30%;
+    }
+  }
+
+  @keyframes img1 {
+    0% {
+    }
+
+    50% {
+      top: 10%;
+      left: 31%;
+    }
+    100% {
+      top: 13%;
+      left: 37%;
+      z-index: 5;
+    }
+  }
+
+  @keyframes img2 {
+    0% {
+    }
+
+    50% {
+      top: 22%;
+      left: 40%;
+    }
+    100% {
+      top: 26%;
+      left: 44%;
+    }
+  }
+
+  /* ---- For Supplier ----- */
+  .api {
+    top: 9.6rem;
+    left: 23rem;
+  }
+
+  @keyframes api {
+    0% {
+      top: 11rem;
+      left: 26rem;
+    }
+    100% {
+      top: 9.6rem;
+      left: 23rem;
+    }
+  }
+
+  .excel {
+    top: 6rem;
+    left: 16.5rem;
+  }
+
+  @keyframes excel {
+    0% {
+      top: 6rem;
+      left: 10rem;
+    }
+    100% {
+      top: 6rem;
+      left: 16.5rem;
+    }
+  }
+
+  .ftp {
+    top: 4rem;
+    left: 21.8rem;
+  }
+
+  @keyframes ftp {
+    0% {
+      top: 0rem;
+    }
+    100% {
+      top: 4rem;
+    }
+  }
+
+  /* ------ Error -------- */
+  .error-sec-bg .magnifying-glass {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    animation: magnify 4s linear infinite;
+  }
+
+  .magnifying-glass img {
+    width: 85%;
+  }
+
+  /* ---------Conatct Us ---------- */
+  .Contact-us .address-div {
+    padding-left: 5rem !important;
+  }
+
+  /* ---------------- Solution ------------- */
+  .Solution .selector-item_label {
+    padding: 1.8rem 4.4rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  html {
+    font-size: 8px;
+  }
+  .containerX {
+    margin: 0 6rem !important;
+  }
+
+  .nav-link {
+    padding: 1rem 1rem;
+  }
+
+  .LandingPage .PowerfulAPI-content > p {
+    display: block;
+    display: -webkit-box;
+    height: 7rem;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 0.5rem;
+  }
+
+  .LandingPage .NaturalDiamonds,
+  .LandingPage .LabgrownDiamonds {
+    height: auto;
+  }
+
+  /* ----------- About Us------------- */
+  .About-us .people-card-details .year-inset {
+    padding-right: 4rem !important;
+  }
+
+  .About-us .people-card .people-about {
+    padding: 2rem 2rem;
+  }
+
+  .About-us .people-card-details .port-card {
+    padding: 4rem 6rem 6rem 4rem;
+  }
+
+  .LandingPage .NaturalDiamonds-img img {
+    object-position: right;
+  }
+
+  .LandingPage .LabgrownDiamonds-img img {
+    object-position: left;
+  }
+
+  .LandingPage .DiamondPort .DiamondPort-card .DiamondPortcard-img img {
+    height: 15rem;
+  }
+  /* ----- Register ------ */
+
+  .register .map-svg svg {
+    height: 62vh !important;
+  }
+  .register .register-form .form-input {
+    padding: 4rem;
+  }
+
+  .login-map-heading {
+    font-size: 3rem !important;
+  }
+
+  /* @keyframes loupe {
+    0% {
+      transform: translateX(0);
+    }
+
+    33% {
+      transform: translateX(60px);
+    }
+
+    66% {
+      transform: translateX(100px);
+    }
+    66% {
+      transform: translateX(120px);
+    }
+  } */
+
+  /* ---------------- Solution ------------- */
+  .Solution .selector-item_label {
+    padding: 1.8rem 2.9rem;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  /* =================== Navbar =================== */
+  .nav-menu {
+    position: absolute;
+    left: -110%;
+    top: 0rem;
+    background-color: #fff;
+    width: 50%;
+    transition: 0.8s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    z-index: 9999;
+    padding: 2rem;
+    height: 100vh;
+    display: block;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-link {
+    margin: 0.5rem 0;
+    text-align: start;
+    color: var(--color-blue);
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  .nav-menu > li > .active-nav {
+    color: var(--color-sky) !important;
+  }
+
+  .nav-menu li a:hover::after,
+  .nav-menu li a::after {
+    display: none;
+  }
+
+  .hamburgerr {
+    display: block;
+    cursor: pointer;
+    text-align: end;
+    padding-bottom: 2rem;
+  }
+  .hamburgerr > img {
+    transition: 0.5s;
+  }
+  .hamburgerr > img:hover {
+    transform: rotate(180deg);
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    margin-left: 1rem;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburgerr.active .bar:nth-child(1),
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+  }
+
+  .hamburgerr.active .bar:nth-child(3),
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-icon a img {
+    padding: 0;
+  }
+
+  .nav-menu li .active-nav::before {
+    display: none;
+  }
+
+  .nav-blacklayer {
+    display: block;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.445);
+    z-index: 2;
+    transition: 0.5s;
+  }
+
+  .LandingPage .main-banner {
+    background-image: url(../images/home-mob-back-2.png);
+    background-color: var(--color-blue);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 70rem;
+    /* overflow: hidden; */
+    position: relative;
+  }
+
+  .banner-content .AccountBtn {
+    margin: 2rem auto;
+  }
+
+  .spacer229 {
+    margin: 0 2.5rem !important;
+  }
+
+  .LandingPage .BuySell,
+  .LandingPage .UniquePort,
+  .LandingPage .MostSearch {
+    margin: 1rem 0;
+  }
+
+  .LandingPage .UniquePort .PortUnique-heading-re {
+    margin: 4rem 0 3.2rem 0;
+  }
+
+  .LandingPage .UniquePort .uniquecard-column-1 {
+    margin-left: 0;
+  }
+
+  /* Responsive Card */
+  .LandingPage .UniquePort .PortUnique-main {
+    white-space: nowrap;
+    overflow-x: scroll;
+    padding: 3.2rem 0.4rem;
+  }
+  .LandingPage .UniquePort .PortUnique-main::-webkit-scrollbar {
+    display: none;
+  }
+
+  .LandingPage .UniquePort .uniquecard-column-2 {
+    width: 34.1rem;
+    margin: 0;
+  }
+
+  .LandingPage .UniquePort .uniquecard-column-1,
+  .LandingPage .UniquePort .uniquecard-column-3 {
+    width: auto;
+    /* padding: 0 2rem; */
+    display: flex;
+  }
+
+  .LandingPage .UniquePort .UniqueCard {
+    width: 27.2rem;
+    margin: 0 !important;
+    margin-right: 3.2rem !important;
+    text-align: center;
+  }
+
+  .LandingPage .UniquePort .UniqueCard {
+    width: 30rem;
+    margin: 0 !important;
+    /* margin-right: 3.2rem !important; */
+    text-align: center;
+    height: 100%;
+  }
+
+  .LandingPage .UniquePort .UniqueCard-1 > p,
+  .LandingPage .UniquePort .UniqueCard-2 > p,
+  .LandingPage .UniquePort .UniqueCard-3 > p,
+  .LandingPage .UniquePort .UniqueCard-4 > p,
+  .LandingPage .UniquePort .UniqueCard-5 > p {
+    white-space: initial;
+  }
+
+  .LandingPage .UniquePort .UniqueCard-1,
+  .LandingPage .UniquePort .UniqueCard-2,
+  .LandingPage .UniquePort .UniqueCard-4,
+  .LandingPage .UniquePort .UniqueCard-5 {
+    margin-right: 3.2rem !important;
+  }
+
+  .LandingPage .DiamondPort-card-row .DiamondPortcard-column-2 {
+    margin: 0;
+  }
+
+  .LandingPage .NaturalDiamonds-img,
+  .LandingPage .LabgrownDiamonds {
+    margin-left: 0;
+  }
+
+  .LandingPage .NaturalDiamonds,
+  .LandingPage .LabgrownDiamonds-img {
+    margin-right: 0;
+  }
+
+  .LandingPage .hide-content {
+    display: none;
+  }
+
+  /* ---- About us------ */
+
+  .About-us .Meet-Our-Team .Team-column:nth-child(3),
+  .About-us .Meet-Our-Team .Team-column:nth-child(7),
+  .About-us .Meet-Our-Team .Team-column:nth-child(2),
+  .About-us .Meet-Our-Team .Team-column:nth-child(6) {
+    margin: 0;
+  }
+
+  .About-us .Meet-Our-Team .Team-column {
+    margin-top: 2rem !important;
+  }
+
+  .About-us .feature-card-row {
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+  }
+  .About-us .feature-card-row::-webkit-scrollbar {
+    display: none;
+  }
+
+  .About-us .feature-card {
+    margin-bottom: 5.6rem;
+  }
+
+  .About-us .feature-card-column {
+    width: 37.2rem;
+  }
+
+  .re-people-card-details {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .About-us .CEO-img,
+  .About-us .CEO-info {
+    width: 50%;
+  }
+
+  .About-us .last-content {
+    margin: 0;
+    margin-top: 4rem;
+  }
+
+  .About-us .people-card-details .content-card {
+    padding: 3.5rem 2rem 4rem 2rem;
+    border-radius: 0;
+    height: 40.2rem;
+  }
+
+  .About-us .people-card-details .port-card {
+    height: 40.2rem;
+  }
+  .About-us .people-about1,
+  .About-us .people-about3 {
+    height: 34rem !important;
+    margin-top: 0;
+  }
+
+  .About-us .people-about2 {
+    height: 34rem !important;
+  }
+
+  .About-us .card-section ul li {
+    width: 100% !important;
+    display: contents;
+  }
+
+  .About-us .card-section-ul {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+  .About-us .card-section-ul::-webkit-scrollbar {
+    display: none;
+  }
+
+  .About-us .people-card {
+    display: flex;
+  }
+
+  .About-us .people-card .people-about {
+    width: 36rem;
+    height: 42rem !important;
+    margin: 2rem 2rem 2rem 0.4rem !important;
+    padding: 3rem;
+  }
+
+  /* .About-us .people-card .people-about span {
+    top: 3rem;
+  } */
+
+  .About-us .re-people-card-details {
+    margin-bottom: 2.2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .About-us .content-card p:last-child {
+    padding-bottom: 1.2rem !important;
+  }
+
+  .About-us .meet-team-line {
+    margin: 0;
+  }
+
+  .About-us .feature-heading h4 {
+    margin: 0rem 0 4rem 0;
+  }
+
+  /* -------- */
+  .recard-section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .recard-section .year-card,
+  .recard-section .port-card {
+    margin: 0;
+  }
+  .recard-section .year-card,
+  .recard-section .port-card,
+  .recard-section .people-card-details {
+    width: calc(50% - 0.5rem);
+  }
+
+  .About-us .people-card-details .year-inset,
+  .About-us .people-card-details .port-card,
+  .About-us .people-card-details .content-card,
+  .About-us .people-card-details .main {
+    padding: 3rem !important;
+    margin-bottom: 0;
+  }
+
+  .About-us .people-card-details .year-card,
+  .About-us .people-card-details .port-card {
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .About-us .people-card-details .main,
+  .About-us .people-card-details .content-card {
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .recard-section .people-card-details .main .top,
+  .recard-section .people-card-details .main .bottom {
+    display: none;
+  }
+
+  .About-us .people-card-details .year-card {
+    padding: 0;
+  }
+
+  .year-card,
+  .port-card,
+  .main,
+  .content-card {
+    margin: 0;
+  }
+
+  /* .About-us .people-card-details .port-card h1 {
+    font-size: 5.4rem;
+  } */
+
+  /* ------ Conatct Us -------- */
+  .Contact-us .main-banner {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Contact-us .banner-content {
+    padding: 0 0 2.2rem 0;
+  }
+  .Contact-us .contact-us-banner {
+    padding: 0;
+    text-align: center;
+  }
+  .Contact-us .banner-content h6 {
+    width: 100%;
+  }
+  .Contact-us .banner-icon {
+    margin-bottom: 3rem;
+    justify-content: center;
+  }
+  .Contact-us .address-div {
+    padding-left: 0 !important;
+    text-align: center;
+    margin-bottom: 7.2rem;
+  }
+  .Contact-us .address-cont {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .Contact-us .address-cont .address {
+    width: 50%;
+    padding-bottom: 1rem;
+  }
+  .Contact-us .address-div .address-cont .address:nth-child(3)::before {
+    display: none;
+  }
+  .Contact-us .address-div .address:before {
+    bottom: -0rem;
+    left: 13.2rem;
+    transform: translateX(-50%);
+  }
+
+  /* For Buyers */
+  .for-buyer .main-banner {
+    height: auto;
+  }
+
+  .for-buyer .main-banner .banner-img {
+    /* width: 60%; */
+    margin: 0 auto;
+  }
+
+  @keyframes loupe {
+    0% {
+      transform: translateX(0);
+    }
+
+    33% {
+      transform: translateX(50px);
+    }
+
+    66% {
+      transform: translateX(80px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  /* 404 */
+  .error-sec-bg {
+    background-image: none;
+  }
+
+  .Error .containerX {
+    margin: 0 !important;
+  }
+  .error-desc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 4rem; */
+  }
+  .error-sec {
+    background-image: none;
+  }
+
+  .error-desc h2 {
+    /* font-size: 3rem !important; */
+    margin-top: 3rem;
+    width: 60%;
+    margin: 0 auto;
+  }
+  .error-desc p {
+    width: 100%;
+    margin: 3rem 0;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  html {
+    font-size: 8px;
+  }
+  .containerX {
+    margin: 0 4rem !important;
+  }
+
+  /* Index */
+  .banner-content h2 {
+    font-size: 3rem !important;
+  }
+
+  .LandingPage .videoback {
+    height: 36rem;
+  }
+
+  .LandingPage .NaturalDiamonds-img img,
+  .LandingPage .LabgrownDiamonds-img img {
+    height: 30rem;
+  }
+
+  /* About Us */
+  .About-us .people-card .people-about {
+    width: 36rem;
+    height: 42rem !important;
+    margin: 2rem 2rem 2rem 0.4rem !important;
+    padding: 3rem;
+  }
+
+  .About-us .people-card .people-about span {
+    /* top: 3rem; */
+    font-size: 80px;
+  }
+
+  .About-us .re-last-contant h4 {
+    font-size: 2.2rem !important;
+  }
+
+  .About-us .card-section h2 {
+    font-size: 3.6rem !important;
+  }
+
+  .About-us .recard-section {
+    display: flex;
+  }
+  .recard-section .year-card,
+  .recard-section .port-card,
+  .recard-section .people-card-details {
+    width: 100%;
+  }
+
+  .About-us .people-card-details .year-card,
+  .About-us .people-card-details .port-card {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  .About-us .people-card-details .main,
+  .About-us .people-card-details .content-card {
+    margin-left: 0rem;
+    margin-bottom: 2rem;
+  }
+
+  .About-us .people-card-details .main,
+  .About-us .people-card-details .content-card {
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+
+  .About-us .people-card-details .year-inset,
+  .About-us .people-card-details .port-card,
+  .About-us .people-card-details .content-card,
+  .About-us .people-card-details .main {
+    height: auto;
+  }
+
+  /* Privacy & Policy */
+  .PrivacyPolicy .main-banner {
+    height: 30rem;
+  }
+
+  /* ----- Contatc Us ------ */
+  .Contact-us .address-cont .address {
+    display: block !important;
+  }
+
+  .Contact-us .address-div .address:before {
+    bottom: 0rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .Contact-us .conatct-illustraion {
+    margin-bottom: 1rem;
+  }
+
+  /* ---------------- Solution ------------- */
+  .Solution .selector-item_label {
+    padding: 1.2rem 0.7rem;
+  }
+
+  .Solution .Solution-section .feature-content {
+    margin-top: 3.2rem;
+  }
+
+  .Solution .selector {
+    display: block;
+    border-radius: 0;
+    text-align: start;
+  }
+
+  .Solution .selecotr-item {
+    justify-content: start;
+  }
+
+  .Solution .selector-item_label {
+    padding: 1.2rem 0.5rem;
+    width: 100%;
+  }
+
+  .Solution .selecotr-item:first-child .selector-item_label,
+  .Solution .selecotr-item:last-child .selector-item_label {
+    border-radius: 0;
+  }
+
+  .Solution .selector {
+    margin: 4rem 0;
+  }
+
+  .Solution #Displayapp .feature-content,
+  .Solution #Plugin .feature-content,
+  .Solution #DiamondAPI .Solution-image,
+  .Solution #Marketplace .Solution-image,
+  .Solution #MobileApp .Solution-image,
+  .Solution #Displayapp .Solution-image,
+  .Solution #Plugin .Solution-image,
+  .Solution #DiamondAPI .feature-content,
+  .Solution #Marketplace .feature-content,
+  .Solution #MobileApp .feature-content {
+    padding: 0rem !important;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 8px;
+  }
+
+  .LandingPage .NaturalDiamonds-row {
+    margin-top: 3.2rem;
+  }
+  .LandingPage .NaturalDiamonds,
+  .LandingPage .LabgrownDiamonds-img {
+    margin-right: 0;
+  }
+  .LandingPage .NaturalDiamonds-img,
+  .LandingPage .LabgrownDiamonds {
+    margin-left: 0;
+  }
+
+  .LandingPage .DiamondPort-card-row .DiamondPortcard-column-1,
+  .LandingPage .DiamondPort-card-row .DiamondPortcard-column-2,
+  .LandingPage .DiamondPort-card-row .DiamondPortcard-column-3 {
+    width: 100%;
+    margin-top: 2.4rem;
+  }
+
+  .LandingPage .PowerfulAPI-content {
+    margin-left: 0;
+    text-align: center;
+    margin-top: 2.4rem;
+  }
+
+  .LandingPage .PowerfulAPI-content > h6 {
+    font-size: 2.6rem !important;
+  }
+
+  .LandingPage .PowerfulAPI-content .KnowMore {
+    margin: 0 auto;
+  }
+
+  .LandingPage .Solutions-row .PowerfulAPI-img-2 {
+    margin-left: 0;
+  }
+
+  .LandingPage .Bookappoinment .Appoinment-content {
+    display: block;
+    text-align: center;
+    padding: 1.4rem 0;
+  }
+  .LandingPage .Bookappoinment .Appoinment-content .BookNow {
+    margin-top: 0.8rem;
+  }
+
+  .LandingPage .DiamondPortcard-img {
+    text-align: center;
+  }
+
+  .LandingPage .footer-bg .footer-list .card-body {
+    padding: 0;
+  }
+
+  /* .LandingPage .DiamondPort .DiamondPort-card p {
+    text-align: center;
+  } */
+
+  /*--- About Us --- */
+
+  .About-us .main-banner {
+    background-image: url(../images/about-mobile.png);
+    height: auto;
+    background-position: right;
+  }
+
+  .About-us .Meet-Our-Team {
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+  }
+  .About-us .Meet-Our-Team::-webkit-scrollbar {
+    display: none;
+  }
+
+  .About-us .Meet-Our-Team .Team-column {
+    width: 30%;
+  }
+
+  .About-us .Meet-Our-Team .Team-column {
+    margin-right: 3rem !important;
+    margin-top: 3rem !important;
+  }
+
+  .About-us .people-card-details .year-card {
+    background-color: transparent;
+    height: auto;
+  }
+
+  .About-us .people-card-details .year-inset {
+    border-radius: 0;
+  }
+
+  /* ----- For Buyer ----- */
+
+  .register .register-form .form-input {
+    padding: 5.2rem 4rem;
+  }
+  .for-buyer .feature-content h4 {
+    font-size: 2.4rem !important;
+  }
+
+  .for-buyer .feature h4 {
+    font-size: 2.8rem !important;
+  }
+
+  .footer-bg .footer-list .social-icon {
+    margin-top: 1.6rem;
+  }
+
+  .loupas {
+    height: 40%;
+  }
+
+  /* --------- Solution ----------- */
+  .Solution .selector {
+    height: auto;
+  }
+  .Solution .Solution-section .Solution-image img {
+    height: 80%;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  html {
+    font-size: 8px;
+  }
+  .containerX {
+    margin: 0 2rem !important;
+  }
+
+  .nav-menu {
+    width: 80%;
+  }
+
+  .navbar .nav-logo img:first-child {
+    height: 31px;
+  }
+  .scroll-hide {
+    width: 112px;
+    height: 12px;
+  }
+
+  /* -------------- Index ----------- */
+  .LandingPage .main-banner {
+    background-image: url(../images/home-mob-back-3.svg);
+    background-color: var(--color-blue);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 70rem;
+    /* overflow: hidden; */
+    position: relative;
+  }
+  .banner-content h2 {
+    font-size: 2.6rem !important;
+    font-weight: 500;
+  }
+
+  .LandingPage .UniquePort .PortUnique-heading-re {
+    margin-bottom: 0;
+  }
+
+  .LandingPage .NaturalDiamonds,
+  .LandingPage .LabgrownDiamonds {
+    padding: 3.2rem;
+  }
+
+  .LandingPage .Solutions-row {
+    margin-bottom: 0;
+  }
+
+  .LandingPage .NaturalDiamonds h4,
+  .LandingPage .LabgrownDiamonds h4,
+  .LandingPage .DiamondPort div.text-sm-center h4,
+  .LandingPage .CustomerSolutions-heading > h4 {
+    font-size: 18px !important;
+  }
+
+  .LandingPage .videoback {
+    height: 22rem;
+  }
+
+  .LandingPage .MostSearch {
+    padding: 0;
+  }
+
+  .LandingPage .DiamondPort {
+    padding: 2.4rem 0 2.4rem 0;
+  }
+
+  .LandingPage .NaturalDiamonds p,
+  .LandingPage .LabgrownDiamonds p {
+    font-size: 14px;
+  }
+
+  .LandingPage .Bookappoinment .Appoinment-content > .BookNow {
+    padding: 1rem 3.6rem;
+  }
+
+  .LandingPage .Appoinment-content h5 {
+    font-size: 2rem !important;
+  }
+
+  /* -------------------------- */
+  .LandingPage .DiamondPort div.col-12 h4,
+  .LandingPage .MostSearch-heading h4,
+  .LandingPage .UniquePort .Port-Heading,
+  .LandingPage .BuySell h4 {
+    font-size: 18px !important;
+  }
+
+  .LandingPage .DiamondPort-card h6,
+  .LandingPage .PowerfulAPI-content > h6,
+  .LandingPage .UniquePort .UniqueCard h6 {
+    font-size: 16px !important;
+  }
+
+  .LandingPage .DiamondPort-card p,
+  .LandingPage .CustomerSolutions-heading p,
+  .LandingPage .PowerfulAPI-content > p,
+  .LandingPage .MostSearch .MostSearch-heading > p,
+  .LandingPage .BuySell h6 {
+    font-size: 14px !important;
+    font-weight: 400;
+  }
+
+  .LandingPage .BuySell h6 {
+    color: #525151;
+  }
+
+  .LandingPage .UniquePort .UniqueCard h6 {
+    margin-bottom: 8px;
+  }
+
+  .LandingPage .UniquePort .UniqueCard-1 > p,
+  .LandingPage .UniquePort .UniqueCard-2 > p,
+  .LandingPage .UniquePort .UniqueCard-3 > p,
+  .LandingPage .UniquePort .UniqueCard-4 > p,
+  .LandingPage .UniquePort .UniqueCard-5 > p {
+    font-size: 14px !important;
+  }
+
+  /* .LandingPage .DiamondPort .DiamondPort-card {
+    text-align: center;
+  } */
+
+  .LandingPage .CustomerSolutions-heading > h4 {
+    font-size: 18px !important;
+  }
+
+  .LandingPage .UniquePort .UniqueCard {
+    width: 272px;
+  }
+
+  .LandingPage .DiamondPort .DiamondPort-card p,
+  .LandingPage .CustomerSolutions-heading p,
+  .LandingPage .PowerfulAPI-content > p {
+    margin-top: 8px;
+  }
+
+  .LandingPage .Bookappoinment .Appoinment-content {
+    padding: 16px 0;
+  }
+
+  /* ---- About Us ----- */
+  .About-us .main-banner {
+    background-image: url(../images/mob-about-bnner.jpg);
+    background-color: var(--color-blue);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 70rem;
+    /* overflow: hidden; */
+    position: relative;
+  }
+
+  .About-us .people-card .people-about {
+    width: 272px;
+    height: 409px !important;
+    margin: 2rem 2rem 2rem 0.4rem !important;
+    padding: 16px;
+    /* text-align: center; */
+  }
+
+  .About-us .CEO-img,
+  .About-us .CEO-info {
+    width: 100%;
+  }
+
+  .About-us .CEO-img {
+    text-align: center;
+    margin-top: 32px;
+  }
+
+  .About-us .re-people-card-details {
+    display: grid;
+  }
+
+  .About-us .last-content h4 {
+    font-size: 2rem !important;
+  }
+
+  .recard-section {
+    display: flex;
+  }
+
+  .recard-section .year-card,
+  .recard-section .port-card,
+  .recard-section .people-card-details {
+    width: 100%;
+  }
+
+  .About-us .people-card-details .year-card {
+    height: auto;
+  }
+
+  .About-us .people-card-details .main,
+  .About-us .people-card-details .content-card {
+    margin-left: 0;
+    /* margin-top: 2rem; */
+  }
+
+  .About-us .people-card-details .year-card,
+  .About-us .people-card-details .port-card,
+  .About-us .people-card-details .main,
+  .About-us .people-card-details .content-card {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  .About-us .people-card-details .year-inset,
+  .About-us .people-card-details .port-card,
+  .About-us .people-card-details .content-card,
+  .About-us .people-card-details .main {
+    height: auto;
+    background-color: transparent;
+    text-align: center;
+    /* padding: 32px 20px 20px 20px !important; */
+  }
+
+  .About-us .people-card-details .year-inset {
+    padding: 32px 20px 20px 20px !important;
+  }
+
+  .About-us .people-card-details .main {
+    padding: 20px 20px 5px 20px !important;
+  }
+
+  .About-us .people-card-details .port-card {
+    padding: 20px 20px 40px 20px !important;
+  }
+
+  .About-us .people-card-details .port-card p {
+    margin-top: 0 !important;
+  }
+
+  .About-us .people-card-details .port-card h1 {
+    font-size: 24px;
+  }
+
+  .About-us .Meet-Our-Team .Team-column {
+    width: 62%;
+  }
+
+  .About-us .HWS-row {
+    margin-top: 8px;
+  }
+
+  /* ------------ */
+
+  .SectionLine {
+    height: 48px !important;
+    margin-bottom: 16px;
+  }
+  .About-us .people-card-details h2 {
+    font-size: 18px !important;
+    margin-bottom: 16px;
+  }
+
+  .About-us .people-card-details .last-content h4 {
+    font-size: 14px !important;
+  }
+  .About-us .recard-section {
+    background-color: var(--color-blue);
+  }
+
+  .About-us .card-section .year-inset h4,
+  .About-us .card-section .main h4,
+  .About-us .Meet-Our-Team h2,
+  .About-us .feature-heading h4 {
+    font-size: 18px !important;
+    font-weight: 500;
+  }
+
+  .About-us .card-section .year-card p,
+  .About-us .people-card-details .content-card p,
+  .About-us .people-card-details .port-card p,
+  .About-us .card-section .main p {
+    font-size: 14px !important;
+    opacity: 0.8 !important;
+    font-weight: 400 !important;
+    margin-top: 16px;
+  }
+
+  .About-us .people-card-details .content-card {
+    background-color: var(--color-sky);
+  }
+
+  .About-us .people-card .people-about span {
+    position: inherit;
+    top: 0;
+    right: 0;
+    height: 35px;
+    /* width: 40px; */
+    margin-bottom: 8px;
+    font-size: 40px;
+    line-height: 65px;
+  }
+
+  .About-us .Meet-Our-Team h6 {
+    font-size: 14px !important;
+    color: var(--color-blue);
+    margin-top: 0;
+  }
+
+  .About-us .Meet-Our-Team {
+    margin-top: 1rem !important;
+  }
+
+  .About-us .feature-card-column {
+    width: 250px !important;
+  }
+
+  .About-us .feature-card p {
+    font-size: 14px !important;
+    font-weight: 400;
+  }
+  .About-us .Meet-Our-Team .team-details h6:first-child,
+  .About-us .feature-card h6 {
+    font-size: 16px !important;
+    margin-bottom: 0;
+  }
+
+  .About-us .feature-heading h4 {
+    margin-bottom: 24px;
+  }
+
+  .About-us .feature-card {
+    width: 251px;
+    height: 277px;
+    margin-bottom: 72px;
+  }
+  .About-us .feature-card .feature-card-content {
+    height: 171px;
+  }
+
+  /* ------- FOr Buyer ------- */
+  .for-buyer .main-banner .banner-img {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .for-buyer .main-banner {
+    background-position: right;
+  }
+
+  .for-buyer .feature-img {
+    width: 28rem;
+    height: 21.8rem;
+  }
+
+  .for-buyer .for-buyer-row:last-child img {
+    height: 19rem;
+  }
+  .for-buyer .feature-content {
+    text-align: center;
+  }
+
+  .for-buyer .feature-content h6 {
+    color: #525151;
+  }
+
+  .for-buyer .question-accordion .accordion h6 button {
+    padding: 1rem 16px;
+    font-size: 1.6rem !important;
+  }
+  /* .for-buyer
+    .DiamondPortcard-column-3
+    .DiamondPort-card
+    .DiamondPortcard-img
+    img {
+    margin-bottom: 0;
+  } */
+
+  .for-buyer .for-buyer-row {
+    margin-bottom: 8rem;
+  }
+
+  .for-buyer .for-buyer-row:last-child {
+    margin-bottom: 4rem;
+  }
+
+  .for-buyer .feature-content h5 {
+    font-size: 16px !important;
+  }
+
+  .LandingPage
+    .DiamondPort
+    .DiamondPort-card-row
+    .DiamondPortcard-column-2
+    img {
+    margin-left: -40px;
+  }
+
+  /* --------Solution ------- */
+  .Solution .Solution-section {
+    margin-bottom: 7.2rem;
+  }
+
+  .Solution .Solution-section .Solution-image img {
+    height: 100%;
+    width: 100%;
+  }
+
+  /* ------ Contact US -------*/
+
+  .Contact-us .contact-form {
+    padding: 2.2rem;
+  }
+  .Contact-us .contact-form .form-heading h2 {
+    font-size: 3.6rem !important;
+  }
+  .Contact-us .contact-form .form-heading h6 {
+    margin: 1rem 0;
+  }
+  .Contact-us .address-div {
+    padding-left: 0 !important;
+    text-align: center;
+    margin-bottom: 7.2rem;
+  }
+  .Contact-us .address-cont {
+    display: block;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .Contact-us .address-cont .address {
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+  .Contact-us .address-div .address-cont .address:nth-child(3)::before {
+    display: block;
+  }
+
+  /* ----- Register ----- */
+
+  .register .register-form .form-input {
+    padding: 6rem 2rem;
+  }
+
+  /* ------Footer ----*/
+  .footer-bg .footer-list .social-icon {
+    display: flex;
+    justify-content: center;
+  }
+
+  .FollowUs-mail {
+    width: 100%;
+  }
+
+  /* ------------ Privacy & Policy ------------ */
+  .PrivacyPolicy .main-banner {
+    height: 25rem;
+  }
+
+  .error-desc h2 {
+    font-size: 3rem !important;
+  }
+
+  @keyframes loupe {
+    0% {
+      transform: translateX(0);
+    }
+    33% {
+      transform: translateX(30px);
+    }
+
+    66% {
+      transform: translateX(60px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .Solution .Solution-section .feature-content {
+    margin-top: 3.2rem;
+  }
+
+  .Solution .selector {
+    display: block;
+    border-radius: 0.4rem;
+    text-align: start;
+  }
+
+  .Solution .selecotr-item {
+    justify-content: start;
+    align-items: center;
+    height: 37px;
+  }
+
+  .Solution .selector-item_label {
+    padding: 0;
+    width: 100%;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    /* height: 37px; */
+  }
+
+  .Solution .selecotr-item:first-child .selector-item_label,
+  .Solution .selecotr-item:last-child .selector-item_label {
+    border-radius: 0;
+  }
+
+  .Solution .selector {
+    margin: 3rem 0 4rem 0;
+  }
+
+  .Solution #Displayapp .feature-content,
+  .Solution #Plugin .feature-content,
+  .Solution #DiamondAPI .Solution-image,
+  .Solution #Marketplace .Solution-image,
+  .Solution #MobileApp .Solution-image,
+  .Solution #Displayapp .Solution-image,
+  .Solution #Plugin .Solution-image,
+  .Solution #DiamondAPI .feature-content,
+  .Solution #Marketplace .feature-content,
+  .Solution #MobileApp .feature-content {
+    padding: 0rem !important;
+  }
+
+  /* ----------- Mobile Footer ------------ */
+  .footer-bg {
+    padding: 0;
+    padding-bottom: 16px;
+    background-color: var(--color-blue);
+  }
+  .footer-bg .accordion-item {
+    border: none;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.4);
+    background-color: var(--color-blue);
+    color: var(--color-white);
+  }
+  .footer-bg .footer-list .social-icon {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-bg .footer-list .accordion-button {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    font-size: 16px !important;
+    font-weight: 600;
+    padding: 16px;
+    box-shadow: none;
+    opacity: 1;
+  }
+  .footer-bg .footer-list .accordion-button::after {
+    width: 12px;
+    height: 20px;
+    background-image: url(../images/footer-accordion-arrow.svg);
+  }
+  .footer-bg .footer-list .accordion-button:not(.collapsed)::after {
+    transform: rotate(90deg);
+  }
+  .footer-bg .location-city li {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 14px;
+  }
+  .footer-bg .accordion-item .accordion-body {
+    padding: 0 16px;
+  }
+  .footer-bg .followUs-footer {
+    padding: 24px 16px 16px 16px;
+  }
+  .footer-bg .footer-list h6 {
+    font-size: 16px !important;
+    color: var(--color-white);
+    opacity: 0.8;
+  }
+  .footer-bg .footer-list .footer-input p {
+    font-size: 12px;
+    color: var(--color-white);
+  }
+  .footer-bg .footer-list .footer-input .input-group {
+    width: 80%;
+    margin: 1.6rem auto 0 auto;
+  }
+  .footer-bg .footer-list .footer-input .input-group input {
+    font-size: 12px;
+  }
+  .FollowUs-mail {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .register {
+    background-color: var(--color-blue);
+  }
+
+  .register .login-map-heading {
+    margin-top: 30px;
+    padding-top: 0;
+    margin: 30px 16px 0 16px;
+    border-left: 4px solid var(--color-sky);
+    text-align: start;
+    font-size: 20px !important;
+    padding-left: 12px;
+  }
+  .register .login-map-heading span {
+    color: var(--color-sky);
+  }
+
+  .register-form {
+    background-color: var(--color-white);
+    border-radius: 24px 24px 0 0;
+    margin-top: 30px;
+    height: 100%;
+  }
+
+  .register .register-form .form-heading {
+    margin-bottom: 0;
+  }
+
+  .register-form .contact-form .form-heading h2 {
+    font-size: 20px !important;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .register .register-form .contact-form {
+    padding: 20px 16px;
+  }
+
+  .register .register-form .form-input {
+    padding: 0px;
+  }
+
+  .register .register-form .contact-form .form-input .input-col,
+  .register .register-form .form-input hr,
+  .register .register-form .form-input .By-for {
+    margin-top: 20px;
+    padding: 0;
+    margin-bottom: 0;
+  }
+
+  .register .register-form .contact-form .form-input .forgot-password {
+    margin-top: 15px;
+  }
+
+  .register .register-form .contact-form .form-input .forgot-password a {
+    font-size: 14px;
+    color: var(--color-black);
+  }
+
+  .register .contact-form .submit-btn input {
+    margin-top: 60px !important;
+    width: 180px !important;
+    height: 44px;
+    background-color: var(--color-sky);
+  }
+  .register .contact-form .submit-btn input:focus {
+    border: none;
+    box-shadow: none;
+    outline: none;
+  }
+
+  .register .register-form .form-input .sign-in a {
+    margin-top: 20px !important;
+    color: var(--color-black);
+  }
+
+  .register .register-form .form-input .Contact-us {
+    margin-top: 115px !important;
+    color: var(--color-blue);
+    font-weight: 500;
+  }
+
+  .register .register-form .form-input .By-for p {
+    font-size: 14px;
+  }
+  .register .register-form .form-input .By-for p span {
+    color: var(--color-sky);
+  }
+
+  /* ----- Register Form ------ */
+  .register .register-form .contact-form .form-input .input-col input {
+    background-color: #f4f4f6;
+    border-radius: 6px;
+  }
+
+  .register .register-form .contact-form .form-input .FName,
+  .register .register-form .contact-form .form-input .State {
+    padding-right: 7px;
+  }
+  .register .register-form .contact-form .form-input .LName,
+  .register .register-form .contact-form .form-input .City {
+    padding-left: 7px;
+  }
+
+  .register .register-form .contact-form .form-input .input-col select {
+    border-radius: 4px;
+  }
+
+  .register .register-form .form-input .CountryCode {
+    padding-right: 14px !important;
+  }
+
+  .register .register-form .form-input #DiamondTypeRadio .DiamondType-heading {
+    font-size: 14px;
+    color: #323232;
+  }
+}
